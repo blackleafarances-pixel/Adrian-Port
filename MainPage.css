@@ -1,0 +1,372 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    color: #1f1f1f;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+img,
+video {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    font: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+:root {
+    --brand-blue: #0076ff;
+    --brand-dark: #111;
+    --card-radius: 24px;
+    --card-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.Placeholder {
+    background-color: var(--brand-dark);
+    color: #fff;
+    padding: 1.5rem clamp(1.5rem, 4vw, 3.5rem);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#HeaderTitle {
+    margin: 0;
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.TopRightPlaceHolder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.TopRightPlaceHolder button {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    border-radius: 999px;
+    padding: 0.35rem 1.75rem 0.35rem 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.TopRightPlaceHolder button:hover {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+#Facebook_Button_Picture,
+#Instagram_Button_Picture {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+#Facebook_Text,
+#Instagram_Text {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.Introduction_PlaceHolder {
+    background-color: #fff;
+    padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 6vw, 6rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+#MyPicture {
+    width: clamp(120px, 18vw, 220px);
+    height: clamp(120px, 18vw, 220px);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--brand-blue);
+    box-shadow: var(--card-shadow);
+}
+
+#Introduction_Text {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #333;
+}
+
+#Introduction_Paragraph {
+    margin: 0;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: #616161;
+    max-width: 540px;
+}
+
+#Shortcut_PlaceHolder {
+    background-color: var(--brand-blue);
+    padding: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 6vw, 6rem);
+    color: #fff;
+    text-align: center;
+}
+
+#Explore_Text {
+    margin: 0 0 1.5rem;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 600;
+}
+
+.shortcut-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#Coding_Button,
+#MyWork_Button,
+#Contacts_Button {
+    background-color: #fff;
+    border-radius: 999px;
+    padding: 0.65rem 1.5rem 0.65rem 3.5rem;
+    min-width: min(280px, 90vw);
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--brand-blue);
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: left;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+#Coding_Button:hover,
+#MyWork_Button:hover,
+#Contacts_Button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.18);
+}
+
+#Coding_Image,
+#MyWork_Image,
+#Contacts_Image {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    left: 1.25rem;
+}
+
+#Coding_Text,
+#MyWork_Text,
+#Contacts_Text {
+    margin: 0;
+    font-size: 1rem;
+}
+
+#Experience_PlaceHolder {
+    background: linear-gradient(135deg, #eaf4ff, #f8fdff);
+    padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 6vw, 6rem);
+}
+
+#Experience_Text_Design {
+    display: none;
+}
+
+#Experience_Text_Holder {
+    background-color: #fff;
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    padding: clamp(2rem, 4vw, 3rem);
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+#Header_Experience {
+    margin: 0 0 1.5rem;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    color: var(--brand-blue);
+}
+
+strong {
+    color: var(--brand-blue);
+}
+
+#FirstText,
+#SecondText,
+#ThirdText {
+    position: static;
+    font-size: 1rem;
+    color: #404040;
+    margin: 0 0 1rem;
+}
+
+#Works_Placeholder {
+    background-color: #f2f2f2;
+    padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 6vw, 6rem);
+}
+
+#Works_Header {
+    margin: 0 0 2rem;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    text-align: center;
+    color: #333;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+#FirstWork_PlaceHolder,
+#SecondWork_Placeholder,
+#ThirdWork_Placeholder {
+    background-color: #fff;
+    border-radius: var(--card-radius);
+    padding: 1rem 1.25rem 1.5rem;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#FirstVideo,
+#SecondVideo,
+#ThirdVideo {
+    width: 100%;
+    border-radius: 16px;
+}
+
+#FirstVideo_Text,
+#SecondVideo_Text {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #3b3b3b;
+}
+
+big {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+#ContactsPlaceholder {
+    background-color: #050505;
+    color: #fff;
+    padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 6vw, 6rem);
+}
+
+#ContactButtonsPlaceholder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#Facebook_Contact,
+#Instagram_Contact,
+#Email,
+#DiscordButton {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 999px;
+    padding: 0.6rem 1.75rem 0.6rem 0.9rem;
+    min-width: min(260px, 100%);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#Facebook_Contact:hover,
+#Instagram_Contact:hover,
+#Email:hover,
+#DiscordButton:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+}
+
+#Facebook_Button_Picture_Contact,
+#Instagram_Button_Picture_Contact,
+#Email_Picture_Contact_Button,
+#DiscordPicture {
+    width: 28px;
+    height: 28px;
+}
+
+#Facebook_Text_Contact,
+#Instagram_Text_Contact,
+#Email_Contact_Text,
+#Discord {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Layout helpers for existing markup */
+.shortcut-buttons,
+.works-grid,
+#ContactButtonsPlaceholder {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+    .Placeholder {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .TopRightPlaceHolder {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #Coding_Button,
+    #MyWork_Button,
+    #Contacts_Button {
+        min-width: 100%;
+    }
+
+    .works-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .Placeholder {
+        flex-direction: column;
+    }
+
+    #MyPicture {
+        width: 160px;
+        height: 160px;
+    }
+
+    #ContactButtonsPlaceholder {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
